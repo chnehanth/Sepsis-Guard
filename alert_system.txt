@@ -1,0 +1,11 @@
+OneWire oneWire(ONE_WIRE_BUS);
+DallasTemperature sensors(&oneWire);
+LiquidCrystal lcd(12, 11, 7, 8, 9, 10);
+PulseSensorPlayground pulseSensor;
+const int buzzer = 4;
+int detectionCount = 0;
+int myBPM = 0;  // Beats per minute
+float temperatureC;
+
+String phoneNumbers[] = { "+919989065522" };  // Add more numbers as needed
+int totalNumbers = 1;
